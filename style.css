@@ -1,10 +1,14 @@
+/* Basic Styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
+/* Header Styles */
 header, h1 {
     background: #333;
     color: #fff;
@@ -12,9 +16,16 @@ header, h1 {
     text-align: center;
 }
 
+/* Navigation Styles */
 nav ul {
     list-style: none;
     padding: 0;
+    text-align: center;
+    background: #444;
+    margin: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav ul li {
@@ -31,14 +42,19 @@ nav ul li a.active {
     font-weight: bold;
 }
 
+/* Main Content Styles */
 main {
     padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 article, section {
     margin-bottom: 2em;
+    flex: 1 1 100%;
 }
 
+/* Footer Styles */
 footer {
     background: #333;
     color: #fff;
@@ -46,21 +62,26 @@ footer {
     padding: 1em 0;
 }
 
+/* Form Styles */
 form {
     margin: 0 auto;
     max-width: 600px;
     text-align: left;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 form label {
     display: block;
     margin-bottom: 0.5em;
+    width: 100%;
 }
 
 form input, form select, form textarea {
     width: 100%;
     padding: 0.5em;
     margin-bottom: 1em;
+    flex: 1 1 100%;
 }
 
 form button {
@@ -77,6 +98,7 @@ form button:hover {
     background: #0056b3;
 }
 
+/* Navigation Buttons */
 .navigation-buttons {
     text-align: center;
     margin: 20px 0;
@@ -95,4 +117,51 @@ form button:hover {
 
 .navigation-buttons button:hover {
     background-color: #0056b3;
+}
+
+/* Image Caption Styles */
+figure {
+    display: inline-block;
+    margin: 1em;
+}
+
+figcaption {
+    font-size: 0.8em;
+    color: #666;
+}
+
+/* Two Column Flexbox Layout */
+.two-column {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.two-column .column {
+    flex: 1;
+}
+
+/* ID Selector Example */
+#main-content {
+    padding: 1em;
+    background: #fff;
+}
+
+/* Class Selector Example */
+.highlight {
+    background: #ff0;
+}
+
+/* Attribute Selector Example */
+a[target="_blank"] {
+    color: red;
+}
+
+/* Additional Typography */
+h2 {
+    color: #007BFF;
+}
+
+p {
+    margin: 1em 0;
 }
